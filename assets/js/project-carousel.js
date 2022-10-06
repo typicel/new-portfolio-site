@@ -120,8 +120,6 @@ let update_links = (links, direction) => {
         complete: () => {
             let link_parent = document.getElementById("links");
             link_parent.innerHTML = "";
-            console.log("github: " + links.github);
-            console.log("site: " + links.site);
 
             if(links.github !== "NA") {
                 let newLink = document.createElement("a");
