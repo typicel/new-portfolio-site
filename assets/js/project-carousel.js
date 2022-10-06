@@ -1,13 +1,13 @@
-
 let proj_index = 0;
 let projects = [
     {
         title: "My Projects", 
-        description: "Here, you can see a list of all the projects I have made. Most of these are not currently being maintained but they're all still functional.",
+        
+        description: "Use the arrows below to have a look at the things I've made that I think are worth sharing. Anything else that I create will be added here as well. You can also use the links to view the Github pages for each one.",
         icons: [],
         media: {
-            "github":"",
-            "site":"",
+            "github":"NA",
+            "site":"NA",
         }
     },
     {
@@ -49,7 +49,6 @@ let projects = [
     }
 ]
 
-
 let changeHTML = (id, new_val, direction) => {
     let dir = direction === 0 ? 0 : (direction === 1 ? "50px" : "-50px");
     let ret_dir= direction === 0 ? 0 : (direction === 1 ? ["-75px", "0px"] : ["75px", "0px"]);
@@ -74,6 +73,7 @@ let changeHTML = (id, new_val, direction) => {
     })
     return;
 } 
+
 let changeIcons = (icons, direction) => {
     let dir = direction === 0 ? 0 : (direction === 1 ? "50px" : "-50px");
     let ret_dir= direction === 0 ? 0 : (direction === 1 ? ["-75px", "0px"] : ["75px", "0px"]);
